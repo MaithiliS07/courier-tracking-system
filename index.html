@@ -1,0 +1,316 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Changa' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+<style>
+body {
+
+  padding: 0;
+  margin: 0;
+}
+.heading{
+ display:block;
+ top: 0;
+ width:100%;
+ position:fixed;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ background: #E50914; 
+}
+.heading h1 {
+  text-align: left;
+  font-family: 'Changa';
+  margin: 0 30px;
+   padding: 10px 0;
+  float:left;
+  letter-spacing: -1px;
+  color: white;
+  font-size: 40px;
+}
+nav {
+ float:right;
+  width: 80%;
+  margin: 0 auto;
+ background:#E50914;
+    padding: 0px 0;
+  
+}
+nav ul {
+  list-style: none;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  font-family:'Abel';
+  font-size:20px;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* Blend */
+nav.blend ul li a {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.blend ul li a:hover {
+  color: #aaa;
+}
+nav.blend ul li a:before,
+nav.blend ul li a:after {
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background: black;
+  transition: all .6s;
+  margin: auto;
+  content: '.';
+  color: transparent;
+  z-index: -1;
+  opacity:1;
+}
+nav.blend ul li a:before {
+  left: 0;
+}
+nav.blend ul li a:after {
+  right: 0;
+}
+
+nav.blend ul li a:hover:after,
+nav.blend ul li a:hover:before {
+  width: 100%;
+}
+
+
+
+
+
+.info{
+margin:0;
+	}
+.track {
+		margin:0;
+		background-image:url("courier.jpg"); 
+	}
+.track h1{
+		padding-top:10%;
+		width:100%;
+		text-align:center;
+		font-family:'Changa';
+		font-size:50px;
+		color:white;
+		text-shadow:2px 3px 4px #aaa;
+	
+	}
+
+.trackid{
+		display: inline-block;
+		padding: 10px 15px;
+		font-size: 20px;
+		font-family:'Abel';
+        border-radius: 5px;
+        border:3px solid black;
+		width:50%;
+        height:8%;
+		margin-left:20%;
+		margin-bottom:15%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+
+		}
+.trackbtn {
+		
+		display: inline-block;
+		padding: 10px 15px;
+		margin-left:540px;
+		margin-bottom: 300px;
+		font-size: 20px;
+		border-radius:5px;
+		background:#E50914;
+		border:3px solid white;
+        font-family:'Abel';
+        color:white;
+		width:30%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+
+	}
+		
+.trackbtn:hover{
+		background: black;
+		color:#fff;
+		border:3px solid #fff;
+		opacity:1;
+		transition: all .6s;
+    }
+	
+	
+	
+	
+#services,#customers{
+padding-top:8%;
+}
+.services{
+display:block;
+width:100%;
+}
+
+.services h1,.customers h1{
+font-family:'Abel';
+margin-left:50px;
+} 
+.services p{font-family:'Abel';
+margin-left:50px;
+font-size:20px; }
+
+.scard{
+width:100%;
+display:flex;}
+
+.scard div{
+font-family:'Abel';
+width:20%;
+margin-left:5%;
+margin-right:5%;
+text-align:center;
+flex:1;
+}
+.servicecard img{
+	width:50%;
+	}
+
+.customers{
+width:100%;
+}
+.customers div{
+margin-left:10%;}
+.cus img{
+border-radius:5%;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.21);
+
+margin-left:5%;
+margin-bottom:5%;
+	width:15%;}
+
+.footer-distributed{
+	background-color: black;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: 16px sans-serif;
+	text-align: left;
+    color:white;
+	font-family:'Abel';
+	padding: 50px 60px 40px;
+	margin-top: 80px;
+	overflow: hidden;
+	
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="heading">
+<h1>TRACKAGE</h1>
+<nav class="blend">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#customers">Customers</a></li>
+      <li><a href="#footer">Contact Us</a></li>
+      <li><a href="help.php">Help</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="info">
+		<div class="track">
+			<h1>THE MOST TRUSTED PACKAGE </br> TRACKING</h1> 
+		
+			<button name="trackbtn" style="align-items: center; align-content: center;" onclick="btnTrack()"; class="trackbtn">TRACK</button> 
+		</div>
+		<div class="services" id="services">
+			<h1> Services</h1>
+			<p>We operate India’s largest express parcel transportation network with fully integrated and self-owned pickup, mid-mile and delivery operations that successfully reach 20 households every second across India. Our in-house transport management platform enables our clients to schedule pickups, track orders in real-time, manage returns and replacements with ease. We offer flexibility to clients through delivery time choices and flexible payment options.</p>
+		</div>
+			<div class="scard">
+			<div class="servicecard">
+			<img src="s1.png">
+			<h3 >Shipping Services</h3>
+			<p>On-demand Delivery<br>Same-day/Next-day Delivery<br>Time-defined/Slot-based Delivery<br>Returns Management</p>
+			
+			</div>
+			<div class="servicecard" >
+			<img src="s2.png" >
+			<h3 >Handle With Care</h3>
+			<p>Product Replacement/Exchange Services<br>Large/Oversize Order Delivery<br>High-value Product Delivery<br>HAZMAT/Dangerous Goods Delivery</p>
+			</div>
+			<div class="servicecard" >
+			<img src="s3.png">
+			<h3>Technology Services</h3>
+			<p>Real-time Monitoring and Control<br>Consignee Address Validation<br>Fraud Detection<br>Flexible Payment on Delivery</p>
+			</div></div>
+			<div class="customers" id="customers">
+			<h1>Our Customers</h1>
+			<div class="cus">
+			<img src="c1.jpg">
+			<img src="c2.png">
+			<img src="c3.jpg">
+			<img src="c4.png">
+			<img src="c5.jpg">
+			<img src="c6.png">
+			<img src="c7.png">
+			<img src="c8.png">
+			</div>
+			
+		</div>
+	
+</div>
+<footer class="footer-distributed" id="footer">
+
+			<div class="footer-left">
+
+				<h2>TRACKAGE Pvt. Ltd.</h2>
+					<p>© 2021 Trackage.com. All rights reserved. <p>
+
+			</div>
+
+			<div class="footer-right">
+				<h2>Contact Us With</h2>
+			<p>17, Civil Lines, Saat Rasta,Solapur-413006 <br>
+			PHONE: +91 9876767699<br>
+			EMAIL:cms@trackage.com
+
+				
+
+			</div>
+
+		</footer>
+		
+  </body>
+  </html>
+
+
+  <script type="text/javascript">
+  	function btnTrack(){
+  		location.replace('track/index.php?page=track');
+  	}
+  </script>
